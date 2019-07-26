@@ -2,7 +2,7 @@
 This time puts nighttime in the pacific (earlyish for SF, lateish for Korea).
 
     "genesis_time": "2019-07-31T14:00:00Z",
-    "chain_id": "kava-testnet-2",
+    "chain_id": "kava-testnet-2000",
 
 These are the same as cosmoshub-2. hub 1 was slightly different.
 
