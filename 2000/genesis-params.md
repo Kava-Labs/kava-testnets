@@ -1,4 +1,4 @@
-Timezone chart https://www.timeanddate.com/worldclock/meetingtime.html?iso=20190801&p1=224&p2=43&p3=136&p4=37&p5=33&p6=235
+[Timezone chart](https://www.timeanddate.com/worldclock/meetingtime.html?iso=20190801&p1=224&p2=43&p3=136&p4=37&p5=33&p6=235) <br>
 This time puts nighttime in the pacific (earlyish for SF, lateish for Korea).
 
     "genesis_time": "2019-07-31T14:00:00Z",
