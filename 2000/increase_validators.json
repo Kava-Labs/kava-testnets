@@ -1,0 +1,17 @@
+{
+  "title": "Max Validators Param Change",
+  "description": "Increase validators to 150",
+  "changes": [
+    {
+      "subspace": "staking",
+      "key": "MaxValidators",
+      "value": 150
+    }
+  ],
+  "deposit": [
+    {
+      "denom": "ukava",
+      "amount": "10000000"
+    }
+  ]
+}

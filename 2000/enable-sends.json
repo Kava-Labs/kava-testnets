@@ -1,0 +1,17 @@
+{
+  "title": "Enable Transactions Param Change",
+  "description": "Enable transactions",
+  "changes": [
+    {
+      "subspace": "bank",
+      "key": "sendenabled",
+      "value": true
+    }
+  ],
+  "deposit": [
+    {
+      "denom": "ukava",
+      "amount": "10000000"
+    }
+  ]
+}
