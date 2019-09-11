@@ -35,9 +35,7 @@ func main() {
 
 	// Read in the configuration file for the sdk
 	config := sdk.GetConfig()
-	config.SetBech32PrefixForAccount(sdk.Bech32PrefixAccAddr, sdk.Bech32PrefixAccPub)
-	config.SetBech32PrefixForValidator(sdk.Bech32PrefixValAddr, sdk.Bech32PrefixValPub)
-	config.SetBech32PrefixForConsensusNode(sdk.Bech32PrefixConsAddr, sdk.Bech32PrefixConsPub)
+	app.SetBech32AddressPrefixes(config)
 	config.Seal()
 
 	// TODO: setup keybase, viper object, etc. to be passed into
@@ -46,7 +44,7 @@ func main() {
 
 	rootCmd := &cobra.Command{
 		Use:   "kvcli",
-		Short: "Command line interface for interacting with gaiad",
+		Short: "Command line interface for interacting with kvd",
 	}
 
 	// Add --chain-id to persistent flags and mark it required

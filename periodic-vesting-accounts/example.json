@@ -1,0 +1,22 @@
+{
+  "vesting_periods": [
+    {
+      "period_length": "1800",
+      "vesting_amount": [
+        {
+        "denom": "ukava",
+        "amount": "50000000000"
+      }
+    ]
+    },
+    {
+      "period_length": "1800",
+      "vesting_amount": [
+        {
+        "denom": "ukava",
+        "amount": "50000000000"
+      }
+    ]
+    }
+  ]
+}

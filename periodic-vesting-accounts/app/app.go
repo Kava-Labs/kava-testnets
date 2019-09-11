@@ -31,7 +31,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/supply"
 )
 
-const appName = "KavaApp"
+const (
+	Bech32MainPrefix = "kava"
+	appName          = "KavaApp"
+)
 
 var (
 	// DefaultCLIHome default home directories for gaiacli
@@ -80,6 +83,12 @@ func MakeCodec() *codec.Codec {
 	codec.RegisterEvidences(cdc)
 
 	return cdc
+}
+
+func SetBech32AddressPrefixes(config *sdk.Config) {
+	config.SetBech32PrefixForAccount(Bech32MainPrefix, Bech32MainPrefix+sdk.PrefixPublic)
+	config.SetBech32PrefixForValidator(Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixOperator, Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixOperator+sdk.PrefixPublic)
+	config.SetBech32PrefixForConsensusNode(Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixConsensus, Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixConsensus+sdk.PrefixPublic)
 }
 
 // KavaApp extended ABCI application
