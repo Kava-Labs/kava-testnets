@@ -1,7 +1,6 @@
 # Testnet 3000 Genesis Parameters
 
-[Timezone chart](https://www.timeanddate.com/worldclock/meetingtime.html?iso=20190801&p1=224&p2=43&p3=136&p4=37&p5=33&p6=235)
-This time puts nighttime in the pacific (early-ish for San Francisco, late-ish for Korea).
+This genesis time puts nighttime in the pacific (early-ish for San Francisco and late-ish for Korea: [Timezone chart](https://www.timeanddate.com/worldclock/meetingtime.html?iso=20190801&p1=224&p2=43&p3=136&p4=37&p5=33&p6=235)).
 
     "genesis_time": "2019-10-03T14:00:00Z",
     "chain_id": "kava-testnet-3000",
@@ -45,8 +44,8 @@ Normal list of gentxs generated automatically
 
 ### Crisis
 
-Currently set to cosmos hub 3 and 2 's value
-[https://github.com/cosmos/cosmos-sdk/tree/master/docs/spec/crisis](https://github.com/cosmos/cosmos-sdk/tree/master/docs/spec/crisis)
+Currently set to cosmos hub 3 and 2 's value. Reference:
+[https://github.com/cosmos/cosmos-sdk/tree/master/x/crisis/spec](https://github.com/cosmos/cosmos-sdk/tree/master/x/crisis/spec)
 
     "crisis": {
         "constant_fee": {
@@ -58,7 +57,7 @@ Currently set to cosmos hub 3 and 2 's value
 ### Distribution
 
 Main params are the same as cosmos hub 3 and 2 except community pool, and withdraw address.
-withdraw_addr_enabled should be set when txs are enabled
+`withdraw_addr_enabled` should be set when txs are enabled
 Disable community pool by setting tax to 0.
 
     "distribution": {
@@ -84,9 +83,9 @@ Disable community pool by setting tax to 0.
 Mint has same parameters as hubs 1, 2, and 3 except
 
 - `block_per_year` calculated from test 2000 block time (6.24s per block, 365.25 days/year)
-- `inflation` which is just the initial value for inflation, set to the min as hub 1 did
+- `inflation` which is just the initial value for inflation, set to the min, as hub 1 did
 ref: [https://github.com/cosmos/cosmos-sdk/issues/2846](https://github.com/cosmos/cosmos-sdk/issues/2846)
-`annual_provisions` is fine to start at zero, the setting here is just the initial value. It gets computed each block from the inflation pct and the total supply.
+`annual_provisions` is fine to start at zero, the setting here is just the initial value. It gets computed each block from the inflation percentage and the total supply.
 
     "mint": {
         "minter": {
@@ -105,7 +104,7 @@ ref: [https://github.com/cosmos/cosmos-sdk/issues/2846](https://github.com/cosmo
 
 ### Auth
 
-Same params as hub 3, 2, and 1. But now accounts are stored under auth rather than `genaccounts`
+Same params as hub 3, 2, and 1. But now accounts are stored under `auth` rather than `genaccounts`
 
     "auth": {
         "params": {
@@ -120,7 +119,7 @@ Same params as hub 3, 2, and 1. But now accounts are stored under auth rather th
 
 ### Params
 
-x/params has no genesis state
+`params` has no genesis state
 
     "params": null
 
@@ -176,8 +175,7 @@ Params same as hub 3, 2, and 1 except for unbonding time which is 3 days.
 
 ### Slashing
 
-Currently all the same as both hub versions and kava testnet 1.1
-except `max_evidence_age` which is set to the staking unbonding time
+Currently all the same cosmos hub 3, 2, and 1 except `max_evidence_age` which is set to the staking unbonding time
 
     "slashing": {
         "params": {
