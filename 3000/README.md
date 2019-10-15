@@ -63,3 +63,5 @@ The structure of your PR should look like ![this](testnet-3000-dir-structure.png
 Push the changes to github and submit a PR at the [kava-testnets](https://github.com/kava-labs/kava-testnets) repo.
 
 For general troubleshooting, please use the [riot chat](https://riot.im/app/#/room/#kava-validators:matrix.org).
+
+Warning: The documentation for the kava blockchain is incomplete as it's still early in the development roadmap. Due to this, becoming a validator currently requires familiarity with the cosmos-sdk, as well as managing and deploying production IT systems.
