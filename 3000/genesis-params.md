@@ -27,11 +27,10 @@ These are the same as cosmos hub 3 and 2. hub 1 was slightly different.
 
 ### Bank
 
-Start with txs disabled and use governance to enable them.
-Note: faucet won't work.
+Start with txs enabled
 
     "bank": {
-        "send_enabled": false
+        "send_enabled": true
     },
 
 ### Genutil
@@ -67,7 +66,7 @@ Disable community pool by setting tax to 0.
         "community_tax": "0.000000000000000000",
         "base_proposer_reward": "0.010000000000000000",
         "bonus_proposer_reward": "0.040000000000000000",
-        "withdraw_addr_enabled": false,
+        "withdraw_addr_enabled": true,
         "delegator_withdraw_infos": [],
         "previous_proposer": "",
         "outstanding_rewards": [],
@@ -87,6 +86,7 @@ Mint has same parameters as hubs 1, 2, and 3 except
 ref: [https://github.com/cosmos/cosmos-sdk/issues/2846](https://github.com/cosmos/cosmos-sdk/issues/2846)
 `annual_provisions` is fine to start at zero, the setting here is just the initial value. It gets computed each block from the inflation percentage and the total supply.
 
+```json
     "mint": {
         "minter": {
             "inflation": "0.070000000000000000",
@@ -101,6 +101,7 @@ ref: [https://github.com/cosmos/cosmos-sdk/issues/2846](https://github.com/cosmo
             "blocks_per_year": "5057308"
         }
     },
+```
 
 ### Auth
 
