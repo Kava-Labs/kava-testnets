@@ -1,16 +1,16 @@
 # Testnet 3000
 
 ## Overview
-Kava testnet-3000 will test the functionality of the Kava blockchain prior to deployment of mainnet. If no bugs are found, this version of [Kava](https://www.github.com/kava-labs/kava) will be the same as the version used on mainnet. If you are planning on running a validator on miannet it is **strongly** reccommended that you participate in testnet-3000.
+Kava testnet-3000 will test the functionality of the Kava blockchain prior to deployment of mainnet. If no bugs are found, this version of [Kava](https://www.github.com/kava-labs/kava) will be the same as the version used on mainnet. If you are planning on running a validator on mainnet, it is **strongly** recommended that you participate in testnet-3000.
 
 ## Joining
-To join testnet-3000 as a validator, you should submit both a **genesis transaction** and an **account addresss**. The genesis transaction will be for your validator and the account address will control vesting coins that can be delegated. Coins held by the account address will be in a new account type called a [Validator Vesting Account](https://github.com/Kava-Labs/kava/blob/master/x/validator-vesting/spec/01_concepts.md), which vests the coins over time based on weather or not your validator participates in consensus. For testnet-3000, coins will be released every ~12 hours if the validator has signed 90% or greater pre-commits.
+To join testnet-3000 as a validator, you should submit both a **genesis transaction** and an **account addresss**. The genesis transaction will be for your validator and the account address will control vesting coins that can be delegated. Coins held by the account address will be in a new account type called a [Validator Vesting Account](https://github.com/Kava-Labs/kava/blob/master/x/validator-vesting/spec/01_concepts.md), which vests the coins over time based on whether or not your validator participates in consensus. For testnet-3000, coins will be released every ~12 hours if the validator has signed 90% or greater pre-commits.
 
  Since this is new functionality, we encourage participants to test regular account actions like delegating/undelegating coins, sending coins, and taking your validator offline. If you suspect you have found a bug, file an issue in the [Kava repo](https://www.github.com/kava-labs/kava/issues) or post it in the [riot chat](https://riot.im/app/#/room/#kava-validators:matrix.org)
 
 1. Install Kava
 
-**Requires Go 1.13**
+**Requires Go 1.13+**
 
 ```sh
 git clone https://github.com/kava-labs/kava
