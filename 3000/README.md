@@ -53,7 +53,7 @@ First, fork https://github.com/kava-labs/kava-testnets to your `$HOME` directory
 ```sh
 cd $HOME/kava-testnets
 # Make a directory for your gentx
-mkdir ./3000/<your directory>
+mkdir ./3000/gentx/<your directory>
 cp $HOME/.kvd/config/gentx/gentx-* $HOME/kava-testnets/3000/gentx/<your directory>/.
 cp $HOME/kava/<account>.txt $HOME/kava-testnets/3000/gentx/<your director>/.
 ```
