@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "funky",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava1dgc2z96e3ft207ll6vezpl8rkvs9qf9a4rvvyh",
+          "validator_address": "kavavaloper1dgc2z96e3ft207ll6vezpl8rkvs9qf9ac4kyuq",
+          "pubkey": "kavavalconspub1zcjduepq2nm7cdyudpcnn7ejmuzy84ymn8339v6hd69edepthkp0xydjwhjqk6r9jy",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Aox4YlGtbjRwfMGPGoRZRJqFZ7m3z9D0q+I09UtZmtje"
+        },
+        "signature": "nAyxBQdMet8uB/RS6iF/F3TwoTRnu4U7JHs8kQgdIx5l9OCpVO0V4mkJ0ALuozYAGC50ZUmE/fdPQpTPs9xa7g=="
+      }
+    ],
+    "memo": "8375a896b68f538e0c27492731e6300192cfda80@167.71.67.194:26656"
+  }
+}
