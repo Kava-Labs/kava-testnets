@@ -5,3 +5,9 @@ Testnet-4000 will launch February 5th, 14:00 UTC. The recommended version of the
 ```
 6b61b21ec2ff01929f7126a50f44bf2153ca388e@54.88.243.146:26656
 ```
+
+## Genesis hash
+```
+sha256sum genesis.json
+9a07a6258ba574d4d5991c5e5f4180d552d0a91910575942a19218e35eac44b3
+```
