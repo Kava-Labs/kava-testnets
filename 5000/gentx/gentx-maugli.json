@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "maugli",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava1c9zull2y0ya8dgtfg3p8ll2nu2gyjv83kash4k",
+          "validator_address": "kavavaloper1c9zull2y0ya8dgtfg3p8ll2nu2gyjv83mt2ldp",
+          "pubkey": "kavavalconspub1zcjduepqvf32f0h9g34av9n36lgf9x0tvgfcvyedg6q6cm8y36a3ryxd5xps9kv29f",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Ax0ppHUvPVI5Tj+PXQzKw7EtOdUpKwDLr1GPiyoU6UOm"
+        },
+        "signature": "CcjtvSeNTS7WniQs7aD9E23TpJRxMz4MHZgVD3gpwjJGotqehMI8uG3sglnCuxYY9ov0jn0qyODUBDzncfLYYQ=="
+      }
+    ],
+    "memo": "5daf497f7db8e03557eaf3099f6205730bf6ac01@88.198.191.33:26656"
+  }
+}
