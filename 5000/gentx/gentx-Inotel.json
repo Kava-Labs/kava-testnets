@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Inotel",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava153h6h5jy6dm5n6a570trj238ccqwx7ea65jwlv",
+          "validator_address": "kavavaloper153h6h5jy6dm5n6a570trj238ccqwx7eahzgx8m",
+          "pubkey": "kavavalconspub1zcjduepqmn5lv7gj8dn46m7wqz72prn5amm6e0p579pn6n7rns97z2ywj60stwqjny",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AnKD9f5BzBaUDHMEF06287NukRugC3VTnTb1FYkQytV1"
+        },
+        "signature": "qbB/B4T2XKM9s75x44anOEKj01I3NuJ6z/CaCzTtc+U4td3hpWJlarQUVxmGYhH8hYoJIrfPOMEYhZVpKVXw9A=="
+      }
+    ],
+    "memo": "e55f8fa9e5d068a47d823054b9edbd7b999ef96f@128.0.51.146:26656"
+  }
+}
