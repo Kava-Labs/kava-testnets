@@ -1292,10 +1292,10 @@
         "active": true,
         "rewards": [
           {
-            "active": true,
+            "active": false,
             "denom": "bnb",
             "available_rewards": {
-              "amount": "50000000000",
+              "amount": "74000000000",
               "denom": "ukava"
             },
             "duration": "36288000000000000",

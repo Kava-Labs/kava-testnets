@@ -4,7 +4,7 @@ Testnet-6000 will launch May 19th, 14:00 UTC. The recommended version of the sof
 Genesis hash:
 
 ```
-778d88faca7e876d604b73ca6bf5eb8a39388f810da94b91638633dbf48f2237
+555760e2d39c972f51a2e4fd39cb494f3ec13cfe2adbab4ef552a3b7e177faa2
 ```
 
 Peers
