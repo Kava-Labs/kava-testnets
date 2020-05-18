@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "IceCold",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava1f0z4gdys3cquwlaj5n8y87dekr2uzfm0zwkwd5",
+          "validator_address": "kavavaloper1f0z4gdys3cquwlaj5n8y87dekr2uzfm00cvx4r",
+          "pubkey": "kavavalconspub1zcjduepqeg2eh4crwdmq4udutq409f2mt88mzxe32xv63y6xc89eua4rgxjqfkdt8g",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "As0nKakUyBERcJ58bGZKnglgiKSR0tSEFEwIB95BbNC4"
+        },
+        "signature": "FrN+H07OmRIdFukDSc+KvRjDSGK5g2isK9cxEtrYcoBjwcIavQr/Fi5ehcVDD3PpYs02GkbJQZGUPhXZTPZpxQ=="
+      }
+    ],
+    "memo": "45ed7079485ddc71a5b85f353cffaf93900b66a1@95.216.41.37:26656"
+  }
+}
