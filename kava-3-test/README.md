@@ -27,4 +27,4 @@ git checkout ro-add-v0.8-migration
 kvd init --chain-id kava-3-test <your-moniker>
 ```
 
-To submit your PR, copy the contents of `$HOME/.kvd/config/priv_validator_key.json` to the `keys` folder of this repo, removing the `priv_key` portion. Optionally, include a file called '<name>-peer.txt' that contains the persistent peer information for your node.
+To submit your PR, copy the contents of `$HOME/.kvd/config/priv_validator_key.json` to the `keys` folder of this repo, removing the `priv_key` portion. Optionally, include a file called `<name>-peer.txt` that contains the persistent peer information for your node.
