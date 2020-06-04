@@ -28,3 +28,37 @@ kvd init --chain-id kava-3-test <your-moniker>
 ```
 
 To submit your PR, copy the contents of `$HOME/.kvd/config/priv_validator_key.json` to the `keys` folder of this repo, removing the `priv_key` portion. Optionally, include a file called `<name>-peer.txt` that contains the persistent peer information for your node.
+
+
+### Genesis hash
+
+```
+sha256sum genesis.json
+# a5ca7161d346a1265701deca3c2186600e375516e1b501e3215182f45cc21aaf
+```
+
+### Peers
+
+```
+d747825ea8a6ffa8c5ae7736322b323a056996d1@13.124.101.116:26657,f86bcb3827822a8b74afff4830c28e2224c527ad@3.218.154.47:26656,1c145d916ab95e946bd550c34ca2a5e596e592c8@37.221.195.2:26656,2a9d4bfebd3612de833be2e7438f4fc1710b5d3c@52.74.38.107:26656,590ed10458fe5db9640ac4d4be4207b8df90c064@34.231.247.21:26656
+```
+
+### To start the chain
+
+Download the genesis file
+
+```
+wget https://raw.githubusercontent.com/Kava-Labs/kava-testnets/master/kava-3-test/genesis.json -O $HOME/.kvd/config/genesis.json
+```
+
+Verify the genesis file
+
+```
+sha256sum $HOME/.kvd/config/genesis.json
+# a5ca7161d346a1265701deca3c2186600e375516e1b501e3215182f45cc21aaf
+```
+
+```
+# or configure to run with systemd, etc
+kvd start
+```
