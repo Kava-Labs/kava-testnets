@@ -1,7 +1,7 @@
 {
-  "address": "E8468437DB87CD945EAE2B35DBAE7DAA06B8BAA1",
+  "address": "5AA4440350230D5BB8CDFE6A5726656B4FC7DC6E",
   "pub_key": {
     "type": "tendermint/PubKeyEd25519",
-    "value": "N73ReTQzeR+nrKKQpJPONK4apAsn0CUZgoyjt+3VBPQ="
+    "value": "BM16Wru6ELaZXCyKZAH5WGxg5YiMYw2WlcpBnfdbnQg="
   }
 }
