@@ -34,7 +34,7 @@ To submit your PR, copy the contents of `$HOME/.kvd/config/priv_validator_key.js
 
 ```
 sha256sum genesis.json
-# d8090e604b6afff0ba7f1b6b4deafcff7968b4c4471c04ee8be3fbf8220a93e3
+# 4d7b96addda7817e6a1b0e72315ffdc829d0ea3369b1822a40b57ce7fd519260
 ```
 
 ### Peers
@@ -55,7 +55,7 @@ Verify the genesis file
 
 ```
 sha256sum $HOME/.kvd/config/genesis.json
-# d8090e604b6afff0ba7f1b6b4deafcff7968b4c4471c04ee8be3fbf8220a93e3
+# 4d7b96addda7817e6a1b0e72315ffdc829d0ea3369b1822a40b57ce7fd519260
 ```
 
 ```
