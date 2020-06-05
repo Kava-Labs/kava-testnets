@@ -59,6 +59,11 @@ sha256sum $HOME/.kvd/config/genesis.json
 ```
 
 ```
+# reset genesis state
+kvd unsafe-reset-all
+```
+
+```
 # or configure to run with systemd, etc
 kvd start
 ```
