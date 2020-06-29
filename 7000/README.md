@@ -1,6 +1,6 @@
 # Kava Testnet 7000
 
-A minor bug in kava `v0.8.1` was discovered that prevents the bep3 asset supply from inheriting changes from the bep3 parameters. The patch to this bug is a breaking change and the Kava mainnet will undergo an asynchronous network fork to implement the bugfix. Because it is a breaking change being deployed to mainnet, it is essential that the code is thoroughly reviewed and tested in a production-like setting. The corresponding bugfix PR can be found [here](https://github.com/Kava-Labs/kava/pull/604)  The purpose of this testnet is to allow validators to test the patch and ensure that the following conditions are met:
+A minor bug in kava `v0.8.1` was discovered that prevents the bep3 asset supply from inheriting changes from the bep3 parameters. The patch to this bug is a breaking change and the Kava mainnet will undergo an asynchronous network fork to implement the bugfix. Because it is a breaking change being deployed to mainnet, it is essential that the code is thoroughly reviewed and tested in a production-like setting. The corresponding bugfix PR can be found [here](https://github.com/Kava-Labs/kava/pull/604). The purpose of this testnet is to allow validators to test the patch and ensure that the following conditions are met:
 
 1. That v0.9 fixes the bug (ie, increasing the asset limit in the bep3 parameters also increases the asset's supply, allowing new transfers to take place)
 2. That nodes running v0.8 will fork off at the specified activation time, **but not before**.
