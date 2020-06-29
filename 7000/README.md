@@ -9,7 +9,7 @@ A minor bug in kava `v0.8.1` was discovered that prevents the bep3 asset supply 
 
 ## Participation
 
-To simulate realistic network conditions, most validators should run [`v0.9.0-rc`](https://github.com/Kava-Labs/kava/releases/tag/v0.9.0-rc1) and a minority should run [`v0.8.1`](https://github.com/Kava-Labs/kava/releases/tag/v0.8.1). You can submit a gentx for one or both of the following:
+To simulate realistic network conditions, most validators should run [`v0.9.0-rc1`](https://github.com/Kava-Labs/kava/releases/tag/v0.9.0-rc1) and a minority should run [`v0.8.1`](https://github.com/Kava-Labs/kava/releases/tag/v0.8.1). You can submit a gentx for one or both of the following:
 
 ### v0.9 gentx submissions
 
