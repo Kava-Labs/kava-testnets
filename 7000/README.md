@@ -35,7 +35,7 @@ Nodes running `v0.8.1` should successfully follow the chain until July 2nd, 14:0
 
 ```sh
 sha256sum genesis.json
-69f45a7ee56820573b17161782bf9b66cd3805dcccfa6376963a9e5fae6ad21e
+88f34827d35c76b0cb550004d0767020a60d044614413ab3e3e8444abb4077f3
 ```
 
 ## Peers
