@@ -30,3 +30,16 @@ The testnet will launch on Wednesday July 1st, 2020 at 14:00 UTC. The activation
 ## Verification
 
 Nodes running `v0.8.1` should successfully follow the chain until July 2nd, 14:00 UTC, at which point it will fail with a 'Consensus Failure' error message. Nodes running `v0.9.0-rc1` should continue making blocks after the activation time is reached. After activation time, try syncing a node from genesis that is running `v0.9.0-rc1` of the kava software. It should successfully sync to the tip of the chain. Further, you can monitor the bep3 parameters and supply, to ensure that the updates to supply take place as expected and do not cause errors with swaps. If any failures are discovered, file an issue on the main kava repository.
+
+## Genesis hash
+
+```sh
+sha256sum genesis.json
+69f45a7ee56820573b17161782bf9b66cd3805dcccfa6376963a9e5fae6ad21e
+```
+
+## Peers
+
+```sh
+77120e4166fa56b627348a8eb54f4aecbc28131e@18.219.103.38:26656,bce7ebd409182006f782e06e2320db464936cd19@184.169.230.232:26656,2f207bcae54fb29c0b3e8757ee486347b4481ed8@3.23.104.193:26656
+```
