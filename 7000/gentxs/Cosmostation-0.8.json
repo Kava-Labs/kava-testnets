@@ -1,0 +1,46 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+        "msg": [
+            {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                    "description": {
+                        "moniker": "Cosmostation-1",
+                        "identity": "AE4C403A6E7AA1AC",
+                        "website": "https://www.cosmostation.io",
+                        "security_contact": "",
+                        "details": ""
+                    },
+                    "commission": {
+                        "rate": "0.100000000000000000",
+                        "max_rate": "0.100000000000000000",
+                        "max_change_rate": "0.100000000000000000"
+                    },
+                    "min_self_delegation": "1",
+                    "delegator_address": "kava1d5we85gdx9kdyszw0nd9a6jpdu65cxwqvp0vp3",
+                    "validator_address": "kavavaloper1d5we85gdx9kdyszw0nd9a6jpdu65cxwqph4yex",
+                    "pubkey": "kavavalconspub1zcjduepqxg8kz3sernc9k0lwlssz7dnwk6yldhqkmxpvjqprpsg8w536308q96myw5",
+                    "value": {
+                        "denom": "ukava",
+                        "amount": "50000000000"
+                    }
+                }
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas": "200000"
+        },
+        "signatures": [
+            {
+                "pub_key": {
+                    "type": "tendermint/PubKeySecp256k1",
+                    "value": "A9RGp+cAXhc6TMPqBtVmaAyyjfdQ+CLwLSkWTHb52lHd"
+                },
+                "signature": "0NNm5d3qIijKCpJDevnBRH949FveFuqFItQ6cB8RbZ0t2iOuoqavD3d05o7GmCklOipukqzqSETpPP4gXTMhZQ=="
+            }
+        ],
+        "memo": "bce7ebd409182006f782e06e2320db464936cd19@0.0.0.0:26656"
+    }
+}
