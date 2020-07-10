@@ -6,7 +6,7 @@ Testnet-8000 will launch Saturday July 11th at 14:00 UTC. The recommended versio
 
 ```sh
 sha256sum ~/.kvd/config/genesis.json
-5a53ffc71d1c324cc1b24e0cb34f93b961175c0a362e2c4446154dd7e5391c5c
+64be56fcffca28e23aca697f09117b3c708dcaf63012a77d47f29ade593bf4af
 ```
 
 ## Peers
