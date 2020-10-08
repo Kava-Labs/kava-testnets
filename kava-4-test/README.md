@@ -2,7 +2,7 @@
 
 kava-4-test testnet will use the exported and migrated state from kava-3 at block height 1392000. The validator set from kava-3 will then be swapped for a testing validator set that has sufficient power to start the testnet. This will allow a full testing of the genesis migration from kava-3 to kava-4 and provide additional confidence that the network upgrade will go smoothly.
 
-kava-4-test will launch Thursday October 8th, 2020 at 14:00 UTC.
+kava-4-test will launch Monday October 12th, 2020 at 14:00 UTC.
 
 ## Instructions for participants
 
