@@ -26,6 +26,7 @@ To install and initialize the software:
 git clone https://github.com/kava-labs/kava
 cd kava
 git checkout v0.11.0-rc1
+make install
 kvd init --chain-id kava-4-test <your-moniker>
 ```
 
