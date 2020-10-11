@@ -25,7 +25,7 @@ To install and initialize the software:
 ```
 git clone https://github.com/kava-labs/kava
 cd kava
-git checkout v0.11.0-rc1
+git checkout v0.11.0-rc2
 make install
 kvd init --chain-id kava-4-test <your-moniker>
 ```
@@ -36,13 +36,14 @@ To submit your PR, copy the contents of `$HOME/.kvd/config/priv_validator_key.js
 ### Genesis hash
 
 ```
-TBD
+sha256sum $HOME/.kvd/config/genesis.json
+# 5c47e6683989b99307a62854e66358a4af0c27e70359236cdd9c4c92b33b57ec
 ```
 
 ### Peers
 
 ```
-TBD
+00ca9ce8ee2f8cc633790fbf504569dfc10408c6@185.144.83.141:36656,bf745e13fe6717d50a7375271a8d01a650b4067f@165.22.45.23:26657
 ```
 
 ### To start the chain
@@ -50,14 +51,14 @@ TBD
 Download the genesis file
 
 ```
-TBD
+wget https://raw.githubusercontent.com/Kava-Labs/kava-testnets/master/kava-4-test/genesis.json -O ~/.kvd/config/genesis.json
 ```
 
 Verify the genesis file
 
 ```
 sha256sum $HOME/.kvd/config/genesis.json
-# TBD
+# 5c47e6683989b99307a62854e66358a4af0c27e70359236cdd9c4c92b33b57ec
 ```
 
 ```
