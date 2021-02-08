@@ -1,4 +1,6 @@
-Hello! I'm ready for gentx for money-market-madness. Note that this is an alpha-testing network, so please only participate as a launch validator if you have time to update your node if there is a panic and we have to relaunch the network in the next couple of days/weeks. Future testnets for kava-5 will be more stable.
+## Money Market Madness Testnet
+
+We are ready for gentx submissions for money-market-madness. Note that this is an alpha-testing network, so please only participate as a launch validator if you have time to update your node if there is a panic and we have to relaunch the network in the next couple of days/weeks. Future testnets for kava-5 will be more stable.
 
 
 TLDR to submit a gentx:
