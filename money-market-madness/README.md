@@ -9,7 +9,16 @@ TLDR to submit a gentx:
 chain-id: money-market-madness
 gentx-amount: 1000000000000ukava
 kava version (branch): kava-5-pre-mmm
-genesis-time: 2021-02-11T14:00:00Z
+genesis-time: 2021-02-11T15:00:00Z
 ```
 
 Please put gentxs in the `gentxs` folder within this repository.
+
+
+## Launch details
+
+**NOTE: Please pull the latest changes into `kava-5-pre-mmm` and re-install kvd before starting your validator.**
+
+```
+genesis file hash: eec441cf2149dfc36283411f9552325fceb5691120c6201b1ba59befcc067ac8
+persistent_peers: "1f8d4fb19c0754dd801230f546865fa1ac533909@34.239.152.196:26656"
