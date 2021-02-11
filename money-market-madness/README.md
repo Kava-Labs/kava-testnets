@@ -21,4 +21,6 @@ Please put gentxs in the `gentxs` folder within this repository.
 
 ```
 genesis file hash: eec441cf2149dfc36283411f9552325fceb5691120c6201b1ba59befcc067ac8
-persistent_peers: "1f8d4fb19c0754dd801230f546865fa1ac533909@34.239.152.196:26656"
+seeds: "9a07c0acb527f96273dabea8726164500b20ce6e@52.6.22.66:26656"
+persistent_peers: "1f8d4fb19c0754dd801230f546865fa1ac533909@34.239.152.196:26656,2f3d3c7bbc6cc0cea32048063de5f787cbdfc5d6@52.5.145.97:26656,f453bf3c1af94d2a5a3a987ee486e61d29f3ce7c@54.163.14.59:26656"
+```
