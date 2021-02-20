@@ -1,0 +1,70 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+        "msg": [
+            {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                    "description": {
+                        "moniker": "sikka",
+                        "identity": "",
+                        "website": "",
+                        "security_contact": "",
+                        "details": ""
+                    },
+                    "commission": {
+                        "rate": "0.030000000000000000",
+                        "max_rate": "1.000000000000000000",
+                        "max_change_rate": "1.000000000000000000"
+                    },
+                    "min_self_delegation": "1",
+                    "delegator_address": "kava1ceun2qqw65qce5la33j8zv8ltyyaqqfcxftutz",
+                    "validator_address": "kavavaloper1ceun2qqw65qce5la33j8zv8ltyyaqqfctl35n4",
+                    "pubkey": "kavavalconspub1zcjduepq8l2mxwn64mz3uupwpzccuy6sfqal43vr5zpfaunh8cmgkaahqw2qkveytk",
+                    "value": {
+                        "denom": "ukava",
+                        "amount": "1000000000000"
+                    }
+                }
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas": "200000"
+        },
+        "signatures": [
+            {
+                "pub_key": {
+                    "type": "tendermint/PubKeyMultisigThreshold",
+                    "value": {
+                        "threshold": "2",
+                        "pubkeys": [
+                            {
+                                "type": "tendermint/PubKeySecp256k1",
+                                "value": "AxUMR/GKoycWplR+2otzaQZ9zhHRQWJFt3h1bPg1ltha"
+                            },
+                            {
+                                "type": "tendermint/PubKeySecp256k1",
+                                "value": "Az/Xn9XKadn79UpA8TRVrHKbi64QGTxjVSKR9tzMy15o"
+                            },
+                            {
+                                "type": "tendermint/PubKeySecp256k1",
+                                "value": "As7R9fDUnwsUVLDr1cxspp+cY9UfXfUf7i9/w+N0EzKA"
+                            },
+                            {
+                                "type": "tendermint/PubKeySecp256k1",
+                                "value": "A708lKSSivhkgH3n1UGy/AlfWyiehRVAp9G+Nlsy+rDj"
+                            },
+                            {
+                                "type": "tendermint/PubKeySecp256k1",
+                                "value": "ArixmwMR2HoBdIzWiUT6HZFMScZv8odQ0KkIMcoqXHwq"
+                            }
+                        ]
+                    }
+                },
+                "signature": "CgUIBRIBGBJAOVK6vCi3QpkB1c5J4+P+O/pm/vcQkYxdDEGzQRGLguYlCNisVMD2te81m6jtPI+lIGfJkPNvkww75mOyWVyDZRJAbSKeHElGW7tyXyp9S1jCAFOKoRoEHS/SDNtpg3cBRGhbWgt/+VmM+TIsXCDILrCdFbDi/WYHRkI7GP2Ek3nQ7w=="
+            }
+        ],
+        "memo": "7dd7b88035fc4163797e1504e1200f028417dc26@134.209.173.109:26656"
+    }
+}
