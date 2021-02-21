@@ -13,3 +13,9 @@ kava version: v0.13.0-alpha.0 (note, this is the version to use when submitting 
 genesis-time: 2021-02-22T15:00:00Z
 ```
 
+## Genesis Details
+
+```
+genesis hash: cd3caafd7eb48bfe67662cb3f233b0b4830025a322ae285bf2b5dfbd0921974e
+persistent peers: 9e1e61d7f008b6052c649996883a36f0c37f2683@3.236.68.204:26656
+```
