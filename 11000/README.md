@@ -9,7 +9,7 @@ Please put gentxs in the `gentxs` folder within this directory. Gentxs will be a
 ```
 chain-id: kava-testnet-11000
 gentx-amount: 1000000000000ukava
-kava version: v0.13.0-alpha.0 (note, this is the version to use when submitting a gentx. If a higher alpha version (for example, v0.13.0-alpha.1) has been released before genesis, use that version on testnet)
+kava version: v0.13.0-alpha.1 
 genesis-time: 2021-02-22T15:00:00Z
 ```
 
