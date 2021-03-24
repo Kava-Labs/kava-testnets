@@ -1,6 +1,6 @@
 ## Testnet-12000 Upgrade
 
-On March 25th, at 15:00 UTC, the current testnet will halt due to an upgrade proposal. At that time, validators should take the following steps to upgrade to restart the network
+On March 25th, at 15:00 UTC, the current testnet will halt due to an upgrade proposal. At that time, validators should take the following steps to upgrade and restart the network
 
 
 1. Note the final block height that was committed
