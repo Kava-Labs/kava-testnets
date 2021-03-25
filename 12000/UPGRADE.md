@@ -23,8 +23,8 @@ make install
 4. Edit ~/.kvd/config/app.toml
 
 ```
-# Set unsafe-skip-upgrades to be the final committed height + 1. For example, if the final committed height was 49999:
-unsafe-skip-upgrades=[50000]
+# Set unsafe-skip-upgrades to be the final committed height + 1.
+unsafe-skip-upgrades=[114270]
 ```
 
 5. Restart node
