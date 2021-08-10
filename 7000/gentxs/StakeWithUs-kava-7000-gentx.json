@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "flying-bird",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava12xq27y3zne34un9zy3x3qyh9nmd5sfc862uevz",
+          "validator_address": "kavavaloper12xq27y3zne34un9zy3x3qyh9nmd5sfc8hux354",
+          "pubkey": "kavavalconspub1zcjduepqhltds0n8h8m4pkdvxlluxmucnfmas5kprhljujpryv7eveknzjjqhdvhnv",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AsNvYiUgcaYCOX9Re9aT3WkCDqkfjaw6IiyNNttxEVg8"
+        },
+        "signature": "z7EgoarokV8jstxGKBOdL67JhkZYjEPX+FiQv3PexWEt0TBQU7wLK1nQdbfK0Yu7m3GPFmKOX1HYyePfBVsOuw=="
+      }
+    ],
+    "memo": "91b0ab0cda1cc5253aa1a503ad8bd32e5f487ba5@148.251.18.178:26656"
+  }
+}

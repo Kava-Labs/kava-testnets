@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "hipokampus",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "1.000000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava1j6y0gtddva6xaf8rqhkhvlwsvuz7raqtfrm9s4",
+          "validator_address": "kavavaloper1j6y0gtddva6xaf8rqhkhvlwsvuz7raqty4pdgz",
+          "pubkey": "kavavalconspub1zcjduepqvrtxh883c06ffh0h9jzvx4k6sc83y30d25emg8zmfr4usyyzwvgs5py79f",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Ap7fnIK7jCfaeOdJgwVIkYYdEQEjF3DwQuu0Uzu0kf/i"
+        },
+        "signature": "vqRnGQGOm6Q0BiL6/4ttuxjjg01OK7qmKn7PExjmJ5pecC7tsUyuwfQRjXjEu41prHooh1YuYcstWKQUOiJAlQ=="
+      }
+    ],
+    "memo": "c1248f7910408b4c2663f25ea8230d32fe9ba299@172.17.0.3:26656"
+  }
+}
