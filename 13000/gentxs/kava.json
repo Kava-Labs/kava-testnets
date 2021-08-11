@@ -1,0 +1,46 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+        "msg": [
+            {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                    "description": {
+                        "moniker": "kava-node",
+                        "identity": "",
+                        "website": "",
+                        "security_contact": "",
+                        "details": ""
+                    },
+                    "commission": {
+                        "rate": "0.100000000000000000",
+                        "max_rate": "0.200000000000000000",
+                        "max_change_rate": "0.010000000000000000"
+                    },
+                    "min_self_delegation": "1",
+                    "delegator_address": "kava1uag0slr5yjlgszvmfrdwc0wpmkjnrg0sm89pcz",
+                    "validator_address": "kavavaloper1uag0slr5yjlgszvmfrdwc0wpmkjnrg0sk3lfq4",
+                    "pubkey": "kavavalconspub1zcjduepqydwa430fjnqxwh6wl7pwd5f4txreqyqrxym5svysnpxm9p6u9rzqqctfsz",
+                    "value": {
+                        "denom": "ukava",
+                        "amount": "5000000000000"
+                    }
+                }
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas": "200000"
+        },
+        "signatures": [
+            {
+                "pub_key": {
+                    "type": "tendermint/PubKeySecp256k1",
+                    "value": "AtHfRuznWYS7/Cr5/KYueK14wwIDaB6fxYdLXYRmR2l6"
+                },
+                "signature": "pMmuvDN72iahNJxHKh8bYx9Vwl7OOOlEEqTied3eNVg6Rcna7GC5/F4aN6jKAVlA95C0vCkI8W506kS6fkAKBg=="
+            }
+        ],
+        "memo": "aa564faff9e56a47a4a17770847cf9a6b1326c91@172.31.73.246:26656"
+    }
+}
