@@ -1,0 +1,46 @@
+{
+	"type": "cosmos-sdk/StdTx",
+	"value": {
+		"msg": [
+			{
+				"type": "cosmos-sdk/MsgCreateValidator",
+				"value": {
+					"description": {
+						"moniker": "Kava-8-13000-Bodega",
+						"identity": "",
+						"website": "",
+						"security_contact": "",
+						"details": ""
+					},
+					"commission": {
+						"rate": "0.100000000000000000",
+						"max_rate": "0.200000000000000000",
+						"max_change_rate": "0.010000000000000000"
+					},
+					"min_self_delegation": "1",
+					"delegator_address": "kava1stt9gqckwgt6lfmvlglp86z9twav5v55pepv8p",
+					"validator_address": "kavavaloper1stt9gqckwgt6lfmvlglp86z9twav5v55v0mylk",
+					"pubkey": "kavavalconspub1zcjduepqj52uw4f7slhmeadme4f5hx45qfs70vxtwcrlu6ty9jf7wzzw638qj6jjls",
+					"value": {
+						"denom": "ukava",
+						"amount": "1000000000000"
+					}
+				}
+			}
+		],
+		"fee": {
+			"amount": [],
+			"gas": "200000"
+		},
+		"signatures": [
+			{
+				"pub_key": {
+					"type": "tendermint/PubKeySecp256k1",
+					"value": "Al86wOdUNVRvgaQVW8bVJItlxG+CQk5sMAHhryZUbgvq"
+				},
+				"signature": "YbO+9MR5aZOEc6bN79A1zBB3QkP3xTDDbsiTGPsLHzAhuXLWGGtH9ythusZJ+egUBMqvZPq5pUyvKldfuCXmfw=="
+			}
+		],
+		"memo": "83c83342544bb18d5515e04a693c8a1a140295cb@213.159.16.49:26656"
+	}
+}
