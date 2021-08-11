@@ -16,7 +16,7 @@ genesis-time: 2021-08-12T00:00:00Z
 ## Genesis Details
 
 ```
-genesis hash: [PLACEHOLDER]
+genesis hash: 5a8e55539e8bcfa063bb8ce269fa6cecbf5592f3ecebb355361a30a706a08b59ss
 seeds: [PLACEHOLDER]
-persistent peers: [PLACEHOLDER]
+persistent peers: aa564faff9e56a47a4a17770847cf9a6b1326c91@3.238.82.89:26656
 ```
