@@ -1,0 +1,38 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Dual Stacking",
+            "identity": "86AFEC0A2EB34700",
+            "website": "https://dual.systems",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.500000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava1840p324flfmxy3zat5f39kd049wrnyre3j67su",
+          "validator_address": "kavavaloper1840p324flfmxy3zat5f39kd049wrnyreuyqkgt",
+          "pubkey": "kavavalconspub1zcjduepquhaemw20q66tyrhqyekq3j2ufeey05v3gswpn6v6fyx98na077esxvc4l0",
+          "value": {
+            "denom": "ukava",
+            "amount": "1000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": null,
+    "memo": "a5d793e0f28a33ca4e28e58a9c52498e7280b72b@159.65.159.51:27656"
+  }
+}
