@@ -20,7 +20,7 @@ genesis-time: 2022-01-07T23:00:00Z
 genesis hash: 
 ```
     shasum -a 256 genesis.json
-    cce0d62cb57c0e3e39ea857fcd78473ec77a7587627c027288d479412518f43
+    ccce0d62cb57c0e3e39ea857fcd78473ec77a7587627c027288d479412518f43
 ```  
 persistent peers: 
 ```
