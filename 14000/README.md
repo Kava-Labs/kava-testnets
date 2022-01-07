@@ -17,8 +17,12 @@ genesis-time: 2022-01-07T23:00:00Z
 
 ## Genesis Details
 
+genesis hash: 
 ```
-genesis hash: [PLACEHOLDER]
-seeds: [PLACEHOLDER]
-persistent peers: [PLACEHOLDER]
+    shasum -a 256 genesis.json
+    cce0d62cb57c0e3e39ea857fcd78473ec77a7587627c027288d479412518f43
+```  
+persistent peers: 
+```
+    c393dae6f1fb31824a8be066c03cb33434943505@107.21.78.161:26656
 ```
