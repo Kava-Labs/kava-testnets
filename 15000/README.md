@@ -1,8 +1,8 @@
 # Kava EVM Alpha Testnet
 
-This testnet will be the first public testnet in preparation for the `kava-10` mainnet release.
+This testnet will be the first public testnet in preparation for the `kava-10` mainnet releases. 
 
-Please put gentxs in the `gentxs` folder within this directory. Gentxs will be accepted until Friday, Jan 7 at 16:00 UTC. The genesis file will be published shortly after that. 
+Please submit a request for testnet funds in the `validators` discord channel.
 
 ## Chain Details
 
