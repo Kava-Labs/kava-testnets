@@ -8,7 +8,7 @@ Please submit a request for testnet funds in the `validators` discord channel.
 
 ```
 chain-id: kava_2221-15000
-kava tag: v0.17.0-alpha.0
+kava tag: v0.17.0-alpha.1
 genesis-time: 2022-03-08T0:00:00Z
 ```
 
