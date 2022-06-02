@@ -1,0 +1,2081 @@
+{
+  "genesis_time": "2022-05-18T14:00:00Z",
+  "chain_id": "kava_2221-16000",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": ["ed25519"]
+    },
+    "version": {}
+  },
+  "app_hash": "",
+  "app_state": {
+    "auction": {
+      "next_auction_id": "1",
+      "params": {
+        "max_auction_duration": "172800s",
+        "forward_bid_duration": "28800s",
+        "reverse_bid_duration": "3600s",
+        "increment_surplus": "0.050000000000000000",
+        "increment_debt": "0.050000000000000000",
+        "increment_collateral": "0.050000000000000000"
+      },
+      "auctions": []
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1cj7njkw2g9fqx4e768zc75dp9sks8u9znxrf0w",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "kavadist",
+          "permissions": ["minter"]
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1mfru9azs5nua2wxcd4sq64g5nt7nn4n8s2w8cu",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "swap",
+          "permissions": null
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "kava1ak4pa9z2aty94ze2cs06wsdnkg9hsvfkp40r02",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "kava123fxg0l602etulhhcdm0vt7l57qya5wjcrwhzz",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "kava10wlnqzyss4accfqmyxwx5jy5x9nfkwh6qm7n4t",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1afcspmdzlqzn2c53krj4mt2yskv6wtrds2jqht",
+            "pub_key": null,
+            "sequence": "1"
+          },
+          "code_hash": "0x1ced8574638e720ec8a1fed7a7ce2b3655624b641cdc63ead18497efacb9727e"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1vtf08rd2z9fm8qwxa54y3el5vues8ty64qcdyr",
+            "pub_key": null,
+            "sequence": "1"
+          },
+          "code_hash": "0xefe54230c8a74092194afdcb21c230b4cc4e07d0e6cd22bf0d3721f518df8ef2"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1wrrekcy2h0zs9shkruuwqsvsldq8hm70yad4ke",
+            "pub_key": null,
+            "sequence": "1"
+          },
+          "code_hash": "0xd51cf04c1b78bc48b348e8455c4181539ab0b7ff84bb081fed109cd5feafaede"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1g3kdcr8ah7rs07dk00elnkpmk34e6dcj94306a",
+            "pub_key": null,
+            "sequence": "1"
+          },
+          "code_hash": "0"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "account_number": "0",
+            "address": "kava1xg3g4gadzvlgfqwnsfufnsv6r0gmtnhl9f09p5",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "code_hash": "0"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "kava1g3kdcr8ah7rs07dk00elnkpmk34e6dcj94306a",
+          "coins": [
+            {
+              "denom": "ukava",
+              "amount": "10000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "kava1xg3g4gadzvlgfqwnsfufnsv6r0gmtnhl9f09p5",
+          "coins": [
+            {
+              "denom": "ukava",
+              "amount": "1000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "kava1mfru9azs5nua2wxcd4sq64g5nt7nn4n8s2w8cu",
+          "coins": [
+            {
+              "amount": "200000000",
+              "denom": "btcb"
+            },
+            {
+              "amount": "1000000000",
+              "denom": "hard"
+            },
+            {
+              "amount": "5000000000",
+              "denom": "swp"
+            },
+            {
+              "amount": "5000000000",
+              "denom": "ukava"
+            },
+            {
+              "amount": "103000000000",
+              "denom": "usdx"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "btcb",
+          "amount": "200000000"
+        },
+        {
+          "denom": "hard",
+          "amount": "1000000000"
+        },
+        {
+          "denom": "swp",
+          "amount": "5000000000"
+        },
+        {
+          "denom": "ukava",
+          "amount": "10001000000005000000000"
+        },
+        {
+          "denom": "usdx",
+          "amount": "103000000000"
+        }
+      ],
+      "denom_metadata": []
+    },
+    "bep3": {
+      "supplies": [],
+      "atomic_swaps": [],
+      "previous_block_time": "1970-01-01T00:00:00Z",
+      "params": {
+        "asset_params": [
+          {
+            "denom": "btcb",
+            "coin_id": "0",
+            "supply_limit": {
+              "limit": "100000000000",
+              "time_limited": false,
+              "time_period": "0",
+              "time_based_limit": "0"
+            },
+            "active": true,
+            "deputy_address": "kava1kla4wl0ccv7u85cemvs3y987hqk0afcv7vue84",
+            "fixed_fee": "2",
+            "min_swap_amount": "3",
+            "max_swap_amount": "2000000000",
+            "min_block_lock": "24686",
+            "max_block_lock": "86400"
+          },
+          {
+            "denom": "xrpb",
+            "coin_id": "144",
+            "supply_limit": {
+              "limit": "2000000000000000",
+              "time_limited": false,
+              "time_period": "0",
+              "time_based_limit": "0"
+            },
+            "active": true,
+            "deputy_address": "kava14q5sawxdxtpap5x5sgzj7v4sp3ucncjlpuk3hs",
+            "fixed_fee": "100000",
+            "min_swap_amount": "100001",
+            "max_swap_amount": "250000000000000",
+            "min_block_lock": "24686",
+            "max_block_lock": "86400"
+          },
+          {
+            "denom": "bnb",
+            "coin_id": "714",
+            "supply_limit": {
+              "limit": "100000000000000",
+              "time_limited": false,
+              "time_period": "0",
+              "time_based_limit": "0"
+            },
+            "active": true,
+            "deputy_address": "kava1agcvt07tcw0tglu0hmwdecsnuxp2yd45f3avgm",
+            "fixed_fee": "1000",
+            "min_swap_amount": "1001",
+            "max_swap_amount": "500000000000",
+            "min_block_lock": "24686",
+            "max_block_lock": "86400"
+          },
+          {
+            "denom": "busd",
+            "coin_id": "727",
+            "supply_limit": {
+              "limit": "2000000000000000",
+              "time_limited": false,
+              "time_period": "0",
+              "time_based_limit": "0"
+            },
+            "active": true,
+            "deputy_address": "kava1j9je7f6s0v6k7dmgv6u5k5ru202f5ffsc7af04",
+            "fixed_fee": "20000",
+            "min_swap_amount": "20001",
+            "max_swap_amount": "100000000000000",
+            "min_block_lock": "24686",
+            "max_block_lock": "86400"
+          }
+        ]
+      }
+    },
+    "bridge": {
+      "params": {
+        "bridge_enabled": true,
+        "enabled_erc20_tokens": [
+          {
+            "address": "0x6098c27D41ec6dc280c2200A737D443b0AaA2E8F",
+            "name": "Wrapped ETH",
+            "symbol": "WETH",
+            "decimals": 18,
+            "minimum_withdraw_amount": "10000000000000000"
+          },
+          {
+            "address": "0x4Fb48E68842bb59f07569c623ACa5826b600F8F7",
+            "name": "USDC",
+            "symbol": "USDC",
+            "decimals": 6,
+            "minimum_withdraw_amount": "10000000"
+          }
+        ],
+        "relayer": "kava15tmj37vh7ch504px9fcfglmvx6y9m70646ev8t",
+        "enabled_conversion_pairs": [
+          {
+            "kava_erc20_address": "0x404F9466d758eA33eA84CeBE9E444b06533b369e",
+            "denom": "erc20/weth"
+          }
+        ]
+      },
+      "erc20_bridge_pairs": [],
+      "next_withdraw_sequence": "1"
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "cdp": {
+      "cdps": [],
+      "debt_denom": "debt",
+      "deposits": [],
+      "gov_denom": "ukava",
+      "params": {
+        "circuit_breaker": false,
+        "collateral_params": [
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "8",
+            "debt_limit": {
+              "amount": "20000000000000",
+              "denom": "usdx"
+            },
+            "denom": "bnb",
+            "liquidation_market_id": "bnb:usd:30",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "spot_market_id": "bnb:usd",
+            "stability_fee": "1.000000000782997700",
+            "type": "bnb-a"
+          },
+          {
+            "auction_size": "100000000",
+            "conversion_factor": "8",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "btcb",
+            "liquidation_market_id": "btc:usd:30",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "spot_market_id": "btc:usd",
+            "stability_fee": "1.000000000782997700",
+            "type": "btcb-a"
+          },
+          {
+            "denom": "xrpb",
+            "type": "xrpb-a",
+            "liquidation_ratio": "1.500000000000000000",
+            "debt_limit": {
+              "denom": "usdx",
+              "amount": "1000000000000"
+            },
+            "stability_fee": "1.000000001547125958",
+            "auction_size": "100000000000",
+            "liquidation_penalty": "0.075000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "spot_market_id": "xrp:usd",
+            "liquidation_market_id": "xrp:usd:30",
+            "conversion_factor": "8"
+          },
+          {
+            "denom": "busd",
+            "type": "busd-a",
+            "liquidation_ratio": "1.010000000000000000",
+            "debt_limit": {
+              "denom": "usdx",
+              "amount": "3000000000000"
+            },
+            "stability_fee": "1.000000000000000000",
+            "auction_size": "1000000000000",
+            "liquidation_penalty": "0.075000000000000000",
+            "check_collateralization_index_count": "10",
+            "keeper_reward_percentage": "0.01",
+            "spot_market_id": "busd:usd",
+            "liquidation_market_id": "busd:usd:30",
+            "conversion_factor": "8"
+          },
+          {
+            "denom": "busd",
+            "type": "busd-b",
+            "liquidation_ratio": "1.100000000000000000",
+            "debt_limit": {
+              "denom": "usdx",
+              "amount": "3000000000000"
+            },
+            "stability_fee": "1.000000012857214317",
+            "auction_size": "1000000000000",
+            "liquidation_penalty": "0.075000000000000000",
+            "check_collateralization_index_count": "10",
+            "keeper_reward_percentage": "0.01",
+            "spot_market_id": "busd:usd",
+            "liquidation_market_id": "busd:usd:30",
+            "conversion_factor": "8"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "ukava",
+            "liquidation_market_id": "kava:usd:30",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "spot_market_id": "kava:usd",
+            "stability_fee": "1.000000000782997700",
+            "type": "ukava-a"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "ibc/C72DE26FFF16DE62BE2784E12229BDF5F4465CE8B10530426D6DB53255FF01B2",
+            "liquidation_market_id": "luna:usd:30",
+            "spot_market_id": "luna:usd",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "stability_fee": "1.000000000782997700",
+            "type": "luna-a"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "ibc/4129EB76C01ED14052054BB975DE0C6C5010E12FFD9253C20C58BCD828BEE9A5",
+            "liquidation_market_id": "akt:usd:30",
+            "spot_market_id": "akt:usd",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "stability_fee": "1.000000000782997700",
+            "type": "akt-a"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "liquidation_market_id": "osmo:usd:30",
+            "spot_market_id": "osmo:usd",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "stability_fee": "1.000000000782997700",
+            "type": "osmo-a"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "liquidation_market_id": "atom:usd:30",
+            "spot_market_id": "atom:usd",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "stability_fee": "1.000000000782997700",
+            "type": "atom-a"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "hard",
+            "liquidation_market_id": "hard:usd:30",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "spot_market_id": "hard:usd",
+            "stability_fee": "1.000000000782997700",
+            "type": "hard-a"
+          },
+          {
+            "auction_size": "50000000000",
+            "conversion_factor": "6",
+            "debt_limit": {
+              "amount": "2000000000000",
+              "denom": "usdx"
+            },
+            "denom": "swp",
+            "liquidation_market_id": "swp:usd:30",
+            "liquidation_penalty": "0.050000000000000000",
+            "liquidation_ratio": "1.500000000000000000",
+            "keeper_reward_percentage": "0.01",
+            "check_collateralization_index_count": "10",
+            "spot_market_id": "swp:usd",
+            "stability_fee": "1.000000000782997700",
+            "type": "swp-a"
+          },
+          {
+            "denom": "hbtc",
+            "type": "hbtc-a",
+            "liquidation_ratio": "1.500000000000000000",
+            "debt_limit": {
+              "denom": "usdx",
+              "amount": "10000000000000"
+            },
+            "stability_fee": "1.000000001547125958",
+            "auction_size": "1000000000000",
+            "liquidation_penalty": "0.075000000000000000",
+            "check_collateralization_index_count": "10",
+            "keeper_reward_percentage": "0.01",
+            "spot_market_id": "btc:usd",
+            "liquidation_market_id": "btc:usd:30",
+            "conversion_factor": "8"
+          }
+        ],
+        "debt_auction_lot": "10000000000",
+        "debt_auction_threshold": "100000000000",
+        "debt_param": {
+          "conversion_factor": "6",
+          "debt_floor": "10000000",
+          "denom": "usdx",
+          "reference_asset": "usd"
+        },
+        "global_debt_limit": {
+          "amount": "53000000000000",
+          "denom": "usdx"
+        },
+        "surplus_auction_lot": "10000000000",
+        "surplus_auction_threshold": "500000000000"
+      },
+      "starting_cdp_id": "1"
+    },
+    "committee": {
+      "committees": [
+        {
+          "@type": "/kava.committee.v1beta1.MemberCommittee",
+          "base_committee": {
+            "id": "1",
+            "description": "Kava Stability Committee",
+            "members": ["kava1fy5zeuutmxzwcx5hncu5q83ug3zcqmxcpwrjsn"],
+            "permissions": [
+              {
+                "@type": "/kava.committee.v1beta1.TextPermission"
+              },
+              {
+                "@type": "/kava.committee.v1beta1.ParamsChangePermission",
+                "allowed_params_changes": [
+                  {
+                    "subspace": "auction",
+                    "key": "BidDuration"
+                  },
+                  {
+                    "subspace": "auction",
+                    "key": "IncrementSurplus"
+                  },
+                  {
+                    "subspace": "auction",
+                    "key": "IncrementDebt"
+                  },
+                  {
+                    "subspace": "auction",
+                    "key": "IncrementCollateral"
+                  },
+                  {
+                    "subspace": "bep3",
+                    "key": "AssetParams"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "GlobalDebtLimit"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "SurplusThreshold"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "SurplusLot"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "DebtThreshold"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "DebtLot"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "DistributionFrequency"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "CollateralParams"
+                  },
+                  {
+                    "subspace": "cdp",
+                    "key": "DebtParam"
+                  },
+                  {
+                    "subspace": "incentive",
+                    "key": "Active"
+                  },
+                  {
+                    "subspace": "kavadist",
+                    "key": "Active"
+                  },
+                  {
+                    "subspace": "pricefeed",
+                    "key": "Markets"
+                  },
+                  {
+                    "subspace": "hard",
+                    "key": "MoneyMarkets"
+                  },
+                  {
+                    "subspace": "hard",
+                    "key": "MinimumBorrowUSDValue"
+                  }
+                ]
+              }
+            ],
+            "vote_threshold": "0.667000000000000000",
+            "proposal_duration": "604800s",
+            "tally_option": "TALLY_OPTION_FIRST_PAST_THE_POST"
+          }
+        },
+        {
+          "@type": "/kava.committee.v1beta1.MemberCommittee",
+          "base_committee": {
+            "id": "2",
+            "description": "Kava Safety Committee",
+            "members": ["kava1fy5zeuutmxzwcx5hncu5q83ug3zcqmxcpwrjsn"],
+            "permissions": [
+              {
+                "@type": "/kava.committee.v1beta1.SoftwareUpgradePermission"
+              }
+            ],
+            "vote_threshold": "0.667000000000000000",
+            "proposal_duration": "604800s",
+            "tally_option": "TALLY_OPTION_FIRST_PAST_THE_POST"
+          }
+        },
+        {
+          "@type": "/kava.committee.v1beta1.MemberCommittee",
+          "base_committee": {
+            "id": "3",
+            "description": "Kava God Committee (testing only)",
+            "members": ["kava1fy5zeuutmxzwcx5hncu5q83ug3zcqmxcpwrjsn"],
+            "permissions": [
+              {
+                "@type": "/kava.committee.v1beta1.GodPermission"
+              }
+            ],
+            "vote_threshold": "0.667000000000000000",
+            "proposal_duration": "604800s",
+            "tally_option": "TALLY_OPTION_FIRST_PAST_THE_POST"
+          }
+        },
+        {
+          "@type": "/kava.committee.v1beta1.TokenCommittee",
+          "base_committee": {
+            "id": "4",
+            "description": "HARD Governance Committee",
+            "members": ["kava1fy5zeuutmxzwcx5hncu5q83ug3zcqmxcpwrjsn"],
+            "permissions": [
+              {
+                "@type": "/kava.committee.v1beta1.TextPermission"
+              },
+              {
+                "@type": "/kava.committee.v1beta1.ParamsChangePermission",
+                "allowed_params_changes": [
+                  {
+                    "subspace": "hard",
+                    "key": "MoneyMarkets"
+                  },
+                  {
+                    "subspace": "hard",
+                    "key": "MinimumBorrowUSDValue"
+                  },
+                  {
+                    "subspace": "incentive",
+                    "key": "HardSupplyRewardPeriods"
+                  },
+                  {
+                    "subspace": "incentive",
+                    "key": "HardBorrowRewardPeriods"
+                  },
+                  {
+                    "subspace": "incentive",
+                    "key": "HardDelegatorRewardPeriods"
+                  }
+                ]
+              }
+            ],
+            "vote_threshold": "0.667000000000000000",
+            "proposal_duration": "604800s",
+            "tally_option": "TALLY_OPTION_DEADLINE"
+          },
+          "quorum": "0.330000000000000000",
+          "tally_denom": "hard"
+        },
+        {
+          "@type": "/kava.committee.v1beta1.TokenCommittee",
+          "base_committee": {
+            "id": "5",
+            "description": "SWP Governance Committee",
+            "members": ["kava1fy5zeuutmxzwcx5hncu5q83ug3zcqmxcpwrjsn"],
+            "permissions": [
+              {
+                "@type": "/kava.committee.v1beta1.TextPermission"
+              },
+              {
+                "@type": "/kava.committee.v1beta1.ParamsChangePermission",
+                "allowed_params_changes": [
+                  {
+                    "subspace": "swap",
+                    "key": "AllowedPools"
+                  },
+                  {
+                    "subspace": "swap",
+                    "key": "SwapFee"
+                  },
+                  {
+                    "subspace": "incentive",
+                    "key": "DelegatorRewardPeriods"
+                  },
+                  {
+                    "subspace": "incentive",
+                    "key": "SwapRewardPeriods"
+                  }
+                ]
+              }
+            ],
+            "vote_threshold": "0.667000000000000000",
+            "proposal_duration": "604800s",
+            "tally_option": "TALLY_OPTION_DEADLINE"
+          },
+          "quorum": "0.330000000000000000",
+          "tally_denom": "swp"
+        }
+      ],
+      "next_proposal_id": "1",
+      "proposals": [],
+      "votes": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "ukava",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "evm": {
+      "accounts": [
+        {
+          "address": "0xeA7100edA2f805356291B0E55DaD448599a72C6d",
+          "code": "608060405234801561001057600080fd5b50600436106100885760003560e01c806372425d9d1161005b57806372425d9d1461012a57806386d516e814610148578063a8b0574e14610166578063ee82ac5e1461018457610088565b80630f28c97d1461008d578063252dba42146100ab57806327e86d6e146100dc5780634d2301cc146100fa575b600080fd5b6100956101b4565b6040516100a29190610381565b60405180910390f35b6100c560048036038101906100c091906106b0565b6101bc565b6040516100d3929190610843565b60405180910390f35b6100e461030f565b6040516100f1919061088c565b60405180910390f35b610114600480360381019061010f91906108a7565b610324565b6040516101219190610381565b60405180910390f35b610132610345565b60405161013f9190610381565b60405180910390f35b61015061034d565b60405161015d9190610381565b60405180910390f35b61016e610355565b60405161017b91906108e3565b60405180910390f35b61019e6004803603810190610199919061092a565b61035d565b6040516101ab919061088c565b60405180910390f35b600042905090565b60006060439150825167ffffffffffffffff8111156101de576101dd6103c6565b5b60405190808252806020026020018201604052801561021157816020015b60608152602001906001900390816101fc5790505b50905060005b83518110156103095760008085838151811061023657610235610957565b5b60200260200101516000015173ffffffffffffffffffffffffffffffffffffffff1686848151811061026b5761026a610957565b5b60200260200101516020015160405161028491906109c2565b6000604051808303816000865af19150503d80600081146102c1576040519150601f19603f3d011682016040523d82523d6000602084013e6102c6565b606091505b5091509150816102d557600080fd5b808484815181106102e9576102e8610957565b5b60200260200101819052505050808061030190610a08565b915050610217565b50915091565b600060014361031e9190610a51565b40905090565b60008173ffffffffffffffffffffffffffffffffffffffff16319050919050565b600044905090565b600045905090565b600041905090565b600081409050919050565b6000819050919050565b61037b81610368565b82525050565b60006020820190506103966000830184610372565b92915050565b6000604051905090565b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6103fe826103b5565b810181811067ffffffffffffffff8211171561041d5761041c6103c6565b5b80604052505050565b600061043061039c565b905061043c82826103f5565b919050565b600067ffffffffffffffff82111561045c5761045b6103c6565b5b602082029050602081019050919050565b600080fd5b600080fd5b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006104a78261047c565b9050919050565b6104b78161049c565b81146104c257600080fd5b50565b6000813590506104d4816104ae565b92915050565b600080fd5b600067ffffffffffffffff8211156104fa576104f96103c6565b5b610503826103b5565b9050602081019050919050565b82818337600083830152505050565b600061053261052d846104df565b610426565b90508281526020810184848401111561054e5761054d6104da565b5b610559848285610510565b509392505050565b600082601f830112610576576105756103b0565b5b813561058684826020860161051f565b91505092915050565b6000604082840312156105a5576105a4610472565b5b6105af6040610426565b905060006105bf848285016104c5565b600083015250602082013567ffffffffffffffff8111156105e3576105e2610477565b5b6105ef84828501610561565b60208301525092915050565b600061060e61060984610441565b610426565b905080838252602082019050602084028301858111156106315761063061046d565b5b835b8181101561067857803567ffffffffffffffff811115610656576106556103b0565b5b808601610663898261058f565b85526020850194505050602081019050610633565b5050509392505050565b600082601f830112610697576106966103b0565b5b81356106a78482602086016105fb565b91505092915050565b6000602082840312156106c6576106c56103a6565b5b600082013567ffffffffffffffff8111156106e4576106e36103ab565b5b6106f084828501610682565b91505092915050565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b600081519050919050565b600082825260208201905092915050565b60005b8381101561075f578082015181840152602081019050610744565b8381111561076e576000848401525b50505050565b600061077f82610725565b6107898185610730565b9350610799818560208601610741565b6107a2816103b5565b840191505092915050565b60006107b98383610774565b905092915050565b6000602082019050919050565b60006107d9826106f9565b6107e38185610704565b9350836020820285016107f585610715565b8060005b85811015610831578484038952815161081285826107ad565b945061081d836107c1565b925060208a019950506001810190506107f9565b50829750879550505050505092915050565b60006040820190506108586000830185610372565b818103602083015261086a81846107ce565b90509392505050565b6000819050919050565b61088681610873565b82525050565b60006020820190506108a1600083018461087d565b92915050565b6000602082840312156108bd576108bc6103a6565b5b60006108cb848285016104c5565b91505092915050565b6108dd8161049c565b82525050565b60006020820190506108f860008301846108d4565b92915050565b61090781610368565b811461091257600080fd5b50565b600081359050610924816108fe565b92915050565b6000602082840312156109405761093f6103a6565b5b600061094e84828501610915565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b600081905092915050565b600061099c82610725565b6109a68185610986565b93506109b6818560208601610741565b80840191505092915050565b60006109ce8284610991565b915081905092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000610a1382610368565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415610a4657610a456109d9565b5b600182019050919050565b6000610a5c82610368565b9150610a6783610368565b925082821015610a7a57610a796109d9565b5b82820390509291505056fea2646970667358221220bcbfee4fd7a7c7b0329ee9342e54104e21b7586f931c591ec19433806f8a803864736f6c63430008090033",
+          "storage": []
+        },
+        {
+          "address": "0x62d2f38dAA1153b381c6ed2A48e7f4673303ac9A",
+          "code": "608060405234801561001057600080fd5b50600436106100b45760003560e01c806372425d9d1161007157806372425d9d146101a657806386d516e8146101c4578063a8b0574e146101e2578063bce38bd714610200578063c3077fa914610230578063ee82ac5e14610262576100b4565b80630f28c97d146100b9578063252dba42146100d757806327e86d6e14610108578063399542e91461012657806342cbb15c146101585780634d2301cc14610176575b600080fd5b6100c1610292565b6040516100ce91906106a3565b60405180910390f35b6100f160048036038101906100ec91906109d2565b61029a565b6040516100ff929190610b65565b60405180910390f35b610110610423565b60405161011d9190610bae565b60405180910390f35b610140600480360381019061013b9190610c01565b610438565b60405161014f93929190610d6b565b60405180910390f35b610160610457565b60405161016d91906106a3565b60405180910390f35b610190600480360381019061018b9190610da9565b61045f565b60405161019d91906106a3565b60405180910390f35b6101ae610480565b6040516101bb91906106a3565b60405180910390f35b6101cc610488565b6040516101d991906106a3565b60405180910390f35b6101ea610490565b6040516101f79190610de5565b60405180910390f35b61021a60048036038101906102159190610c01565b610498565b6040516102279190610e00565b60405180910390f35b61024a600480360381019061024591906109d2565b610640565b60405161025993929190610d6b565b60405180910390f35b61027c60048036038101906102779190610e4e565b610663565b6040516102899190610bae565b60405180910390f35b600042905090565b60006060439150825167ffffffffffffffff8111156102bc576102bb6106e8565b5b6040519080825280602002602001820160405280156102ef57816020015b60608152602001906001900390816102da5790505b50905060005b835181101561041d5760008085838151811061031457610313610e7b565b5b60200260200101516000015173ffffffffffffffffffffffffffffffffffffffff1686848151811061034957610348610e7b565b5b6020026020010151602001516040516103629190610ee6565b6000604051808303816000865af19150503d806000811461039f576040519150601f19603f3d011682016040523d82523d6000602084013e6103a4565b606091505b5091509150816103e9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016103e090610f5a565b60405180910390fd5b808484815181106103fd576103fc610e7b565b5b60200260200101819052505050808061041590610fa9565b9150506102f5565b50915091565b60006001436104329190610ff2565b40905090565b60008060604392504340915061044e8585610498565b90509250925092565b600043905090565b60008173ffffffffffffffffffffffffffffffffffffffff16319050919050565b600044905090565b600045905090565b600041905090565b6060815167ffffffffffffffff8111156104b5576104b46106e8565b5b6040519080825280602002602001820160405280156104ee57816020015b6104db61066e565b8152602001906001900390816104d35790505b50905060005b82518110156106395760008084838151811061051357610512610e7b565b5b60200260200101516000015173ffffffffffffffffffffffffffffffffffffffff1685848151811061054857610547610e7b565b5b6020026020010151602001516040516105619190610ee6565b6000604051808303816000865af19150503d806000811461059e576040519150601f19603f3d011682016040523d82523d6000602084013e6105a3565b606091505b509150915085156105ef57816105ee576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016105e590611098565b60405180910390fd5b5b604051806040016040528083151581526020018281525084848151811061061957610618610e7b565b5b60200260200101819052505050808061063190610fa9565b9150506104f4565b5092915050565b6000806060610650600185610438565b8093508194508295505050509193909250565b600081409050919050565b6040518060400160405280600015158152602001606081525090565b6000819050919050565b61069d8161068a565b82525050565b60006020820190506106b86000830184610694565b92915050565b6000604051905090565b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610720826106d7565b810181811067ffffffffffffffff8211171561073f5761073e6106e8565b5b80604052505050565b60006107526106be565b905061075e8282610717565b919050565b600067ffffffffffffffff82111561077e5761077d6106e8565b5b602082029050602081019050919050565b600080fd5b600080fd5b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006107c98261079e565b9050919050565b6107d9816107be565b81146107e457600080fd5b50565b6000813590506107f6816107d0565b92915050565b600080fd5b600067ffffffffffffffff82111561081c5761081b6106e8565b5b610825826106d7565b9050602081019050919050565b82818337600083830152505050565b600061085461084f84610801565b610748565b9050828152602081018484840111156108705761086f6107fc565b5b61087b848285610832565b509392505050565b600082601f830112610898576108976106d2565b5b81356108a8848260208601610841565b91505092915050565b6000604082840312156108c7576108c6610794565b5b6108d16040610748565b905060006108e1848285016107e7565b600083015250602082013567ffffffffffffffff81111561090557610904610799565b5b61091184828501610883565b60208301525092915050565b600061093061092b84610763565b610748565b905080838252602082019050602084028301858111156109535761095261078f565b5b835b8181101561099a57803567ffffffffffffffff811115610978576109776106d2565b5b80860161098589826108b1565b85526020850194505050602081019050610955565b5050509392505050565b600082601f8301126109b9576109b86106d2565b5b81356109c984826020860161091d565b91505092915050565b6000602082840312156109e8576109e76106c8565b5b600082013567ffffffffffffffff811115610a0657610a056106cd565b5b610a12848285016109a4565b91505092915050565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610a81578082015181840152602081019050610a66565b83811115610a90576000848401525b50505050565b6000610aa182610a47565b610aab8185610a52565b9350610abb818560208601610a63565b610ac4816106d7565b840191505092915050565b6000610adb8383610a96565b905092915050565b6000602082019050919050565b6000610afb82610a1b565b610b058185610a26565b935083602082028501610b1785610a37565b8060005b85811015610b535784840389528151610b348582610acf565b9450610b3f83610ae3565b925060208a01995050600181019050610b1b565b50829750879550505050505092915050565b6000604082019050610b7a6000830185610694565b8181036020830152610b8c8184610af0565b90509392505050565b6000819050919050565b610ba881610b95565b82525050565b6000602082019050610bc36000830184610b9f565b92915050565b60008115159050919050565b610bde81610bc9565b8114610be957600080fd5b50565b600081359050610bfb81610bd5565b92915050565b60008060408385031215610c1857610c176106c8565b5b6000610c2685828601610bec565b925050602083013567ffffffffffffffff811115610c4757610c466106cd565b5b610c53858286016109a4565b9150509250929050565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b610c9281610bc9565b82525050565b6000604083016000830151610cb06000860182610c89565b5060208301518482036020860152610cc88282610a96565b9150508091505092915050565b6000610ce18383610c98565b905092915050565b6000602082019050919050565b6000610d0182610c5d565b610d0b8185610c68565b935083602082028501610d1d85610c79565b8060005b85811015610d595784840389528151610d3a8582610cd5565b9450610d4583610ce9565b925060208a01995050600181019050610d21565b50829750879550505050505092915050565b6000606082019050610d806000830186610694565b610d8d6020830185610b9f565b8181036040830152610d9f8184610cf6565b9050949350505050565b600060208284031215610dbf57610dbe6106c8565b5b6000610dcd848285016107e7565b91505092915050565b610ddf816107be565b82525050565b6000602082019050610dfa6000830184610dd6565b92915050565b60006020820190508181036000830152610e1a8184610cf6565b905092915050565b610e2b8161068a565b8114610e3657600080fd5b50565b600081359050610e4881610e22565b92915050565b600060208284031215610e6457610e636106c8565b5b6000610e7284828501610e39565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b600081905092915050565b6000610ec082610a47565b610eca8185610eaa565b9350610eda818560208601610a63565b80840191505092915050565b6000610ef28284610eb5565b915081905092915050565b600082825260208201905092915050565b7f4d756c746963616c6c206167677265676174653a2063616c6c206661696c6564600082015250565b6000610f44602083610efd565b9150610f4f82610f0e565b602082019050919050565b60006020820190508181036000830152610f7381610f37565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000610fb48261068a565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415610fe757610fe6610f7a565b5b600182019050919050565b6000610ffd8261068a565b91506110088361068a565b92508282101561101b5761101a610f7a565b5b828203905092915050565b7f4d756c746963616c6c32206167677265676174653a2063616c6c206661696c6560008201527f6400000000000000000000000000000000000000000000000000000000000000602082015250565b6000611082602183610efd565b915061108d82611026565b604082019050919050565b600060208201905081810360008301526110b181611075565b905091905056fea2646970667358221220abd9cadc14e2f74213535fd9ad887c7bdc5f4ea6aa73d9aedcb1f0513098ea8e64736f6c63430008090033",
+          "storage": []
+        },
+        {
+          "address": "0x70C79B608aBBC502c2F61f38E04190fB407BefCF",
+          "code": "6080604052600436106100a05760003560e01c8063313ce56711610064578063313ce567146101ad57806370a08231146101d857806395d89b4114610215578063a9059cbb14610240578063d0e30db01461027d578063dd62ed3e14610287576100af565b806306fdde03146100b4578063095ea7b3146100df57806318160ddd1461011c57806323b872dd146101475780632e1a7d4d14610184576100af565b366100af576100ad6102c4565b005b600080fd5b3480156100c057600080fd5b506100c961036a565b6040516100d69190610bbe565b60405180910390f35b3480156100eb57600080fd5b5061010660048036038101906101019190610c79565b6103f8565b6040516101139190610cd4565b60405180910390f35b34801561012857600080fd5b506101316104ea565b60405161013e9190610cfe565b60405180910390f35b34801561015357600080fd5b5061016e60048036038101906101699190610d19565b6104f2565b60405161017b9190610cd4565b60405180910390f35b34801561019057600080fd5b506101ab60048036038101906101a69190610d6c565b6108c2565b005b3480156101b957600080fd5b506101c2610a32565b6040516101cf9190610db5565b60405180910390f35b3480156101e457600080fd5b506101ff60048036038101906101fa9190610dd0565b610a45565b60405161020c9190610cfe565b60405180910390f35b34801561022157600080fd5b5061022a610a5d565b6040516102379190610bbe565b60405180910390f35b34801561024c57600080fd5b5061026760048036038101906102629190610c79565b610aeb565b6040516102749190610cd4565b60405180910390f35b6102856102c4565b005b34801561029357600080fd5b506102ae60048036038101906102a99190610dfd565b610b00565b6040516102bb9190610cfe565b60405180910390f35b34600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282546103139190610e6c565b925050819055503373ffffffffffffffffffffffffffffffffffffffff167fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c346040516103609190610cfe565b60405180910390a2565b6000805461037790610ef1565b80601f01602080910402602001604051908101604052809291908181526020018280546103a390610ef1565b80156103f05780601f106103c5576101008083540402835291602001916103f0565b820191906000526020600020905b8154815290600101906020018083116103d357829003601f168201915b505050505081565b600081600460003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040516104d89190610cfe565b60405180910390a36001905092915050565b600047905090565b600081600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541015610576576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161056d90610f6f565b60405180910390fd5b3373ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff161415801561064e57507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff600460008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205414155b156107a65781600460008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541015610712576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161070990610fdb565b60405180910390fd5b81600460008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825461079e9190610ffb565b925050819055505b81600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282546107f59190610ffb565b9250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825461084b9190610e6c565b925050819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040516108af9190610cfe565b60405180910390a3600190509392505050565b80600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541015610944576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161093b90610f6f565b60405180910390fd5b80600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282546109939190610ffb565b925050819055503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f193505050501580156109e0573d6000803e3d6000fd5b503373ffffffffffffffffffffffffffffffffffffffff167f7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b6582604051610a279190610cfe565b60405180910390a250565b600260009054906101000a900460ff1681565b60036020528060005260406000206000915090505481565b60018054610a6a90610ef1565b80601f0160208091040260200160405190810160405280929190818152602001828054610a9690610ef1565b8015610ae35780601f10610ab857610100808354040283529160200191610ae3565b820191906000526020600020905b815481529060010190602001808311610ac657829003601f168201915b505050505081565b6000610af83384846104f2565b905092915050565b6004602052816000526040600020602052806000526040600020600091509150505481565b600081519050919050565b600082825260208201905092915050565b60005b83811015610b5f578082015181840152602081019050610b44565b83811115610b6e576000848401525b50505050565b6000601f19601f8301169050919050565b6000610b9082610b25565b610b9a8185610b30565b9350610baa818560208601610b41565b610bb381610b74565b840191505092915050565b60006020820190508181036000830152610bd88184610b85565b905092915050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610c1082610be5565b9050919050565b610c2081610c05565b8114610c2b57600080fd5b50565b600081359050610c3d81610c17565b92915050565b6000819050919050565b610c5681610c43565b8114610c6157600080fd5b50565b600081359050610c7381610c4d565b92915050565b60008060408385031215610c9057610c8f610be0565b5b6000610c9e85828601610c2e565b9250506020610caf85828601610c64565b9150509250929050565b60008115159050919050565b610cce81610cb9565b82525050565b6000602082019050610ce96000830184610cc5565b92915050565b610cf881610c43565b82525050565b6000602082019050610d136000830184610cef565b92915050565b600080600060608486031215610d3257610d31610be0565b5b6000610d4086828701610c2e565b9350506020610d5186828701610c2e565b9250506040610d6286828701610c64565b9150509250925092565b600060208284031215610d8257610d81610be0565b5b6000610d9084828501610c64565b91505092915050565b600060ff82169050919050565b610daf81610d99565b82525050565b6000602082019050610dca6000830184610da6565b92915050565b600060208284031215610de657610de5610be0565b5b6000610df484828501610c2e565b91505092915050565b60008060408385031215610e1457610e13610be0565b5b6000610e2285828601610c2e565b9250506020610e3385828601610c2e565b9150509250929050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000610e7782610c43565b9150610e8283610c43565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03821115610eb757610eb6610e3d565b5b828201905092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610f0957607f821691505b60208210811415610f1d57610f1c610ec2565b5b50919050565b7f574b4156413a20616d6f756e74203c2062616c616e6365000000000000000000600082015250565b6000610f59601783610b30565b9150610f6482610f23565b602082019050919050565b60006020820190508181036000830152610f8881610f4c565b9050919050565b7f574b4156413a20616c6c6f77616e6365203c20616d6f756e7400000000000000600082015250565b6000610fc5601983610b30565b9150610fd082610f8f565b602082019050919050565b60006020820190508181036000830152610ff481610fb8565b9050919050565b600061100682610c43565b915061101183610c43565b92508282101561102457611023610e3d565b5b82820390509291505056fea26469706673582212200c0f9b15327ac79d31169413e421bd27d39e9809f7fd940e8929ed9685f5fa4564736f6c63430008090033",
+          "storage": [
+            {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "value": "0x57726170706564204b6176610000000000000000000000000000000000000018"
+            },
+            {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "value": "0x574b41564100000000000000000000000000000000000000000000000000000a"
+            },
+            {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "value": "0x0000000000000000000000000000000000000000000000000000000000000012"
+            }
+          ]
+        }
+      ],
+      "params": {
+        "evm_denom": "akava",
+        "enable_create": true,
+        "enable_call": true,
+        "extra_eips": [],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": null,
+          "arrow_glacier_block": null,
+          "merge_fork_block": null
+        }
+      }
+    },
+    "feemarket": {
+      "params": {
+        "no_base_fee": true,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "1000000000"
+      },
+      "block_gas": "0"
+    },
+    "evmutil": {
+      "accounts": []
+    },
+    "savings": {
+      "params": {
+        "supported_denoms": ["usdx", "ukava", "hard", "swp"]
+      }
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "ukava",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800s"
+      },
+      "voting_params": {
+        "voting_period": "600s"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      }
+    },
+    "hard": {
+      "params": {
+        "money_markets": [],
+        "minimum_borrow_usd_value": "10.000000000000000000"
+      },
+      "previous_accumulation_times": [],
+      "deposits": [],
+      "borrows": [],
+      "total_supplied": [],
+      "total_borrowed": [],
+      "total_reserves": []
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": ["06-solomachine", "07-tendermint"]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "incentive": {
+      "params": {
+        "usdx_minting_reward_periods": [
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "122354",
+              "denom": "ukava"
+            },
+            "collateral_type": "bnb-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          },
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "122354",
+              "denom": "ukava"
+            },
+            "collateral_type": "luna-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          },
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "122354",
+              "denom": "ukava"
+            },
+            "collateral_type": "btcb-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          },
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "30588",
+              "denom": "ukava"
+            },
+            "collateral_type": "busd-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          },
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "31746",
+              "denom": "ukava"
+            },
+            "collateral_type": "xrpb-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          },
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "31746",
+              "denom": "ukava"
+            },
+            "collateral_type": "ukava-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          },
+          {
+            "active": true,
+            "rewards_per_second": {
+              "amount": "23809",
+              "denom": "ukava"
+            },
+            "collateral_type": "hard-a",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-10-16T14:00:00Z"
+          }
+        ],
+        "hard_supply_reward_periods": [
+          {
+            "active": true,
+            "collateral_type": "bnb",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/4129EB76C01ED14052054BB975DE0C6C5010E12FFD9253C20C58BCD828BEE9A5",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/C72DE26FFF16DE62BE2784E12229BDF5F4465CE8B10530426D6DB53255FF01B2",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "btcb",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12355",
+                "denom": "hard"
+              },
+              {
+                "amount": "12355",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "xrpb",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12355",
+                "denom": "hard"
+              },
+              {
+                "amount": "12355",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12355",
+                "denom": "hard"
+              },
+              {
+                "amount": "12355",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "busd",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12355",
+                "denom": "hard"
+              },
+              {
+                "amount": "12355",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ukava",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "hard",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "123455",
+                "denom": "hard"
+              }
+            ]
+          }
+        ],
+        "hard_borrow_reward_periods": [
+          {
+            "active": true,
+            "collateral_type": "bnb",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "busd",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/4129EB76C01ED14052054BB975DE0C6C5010E12FFD9253C20C58BCD828BEE9A5",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/C72DE26FFF16DE62BE2784E12229BDF5F4465CE8B10530426D6DB53255FF01B2",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ukava",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "xrpb",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "btcb",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "12345",
+                "denom": "hard"
+              }
+            ]
+          }
+        ],
+        "delegator_reward_periods": [
+          {
+            "active": true,
+            "collateral_type": "ukava",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "316880",
+                "denom": "hard"
+              },
+              {
+                "amount": "316880",
+                "denom": "swp"
+              }
+            ]
+          }
+        ],
+        "savings_reward_periods": [
+          {
+            "active": true,
+            "collateral_type": "ukava",
+            "start": "2022-04-21T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "31688",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "usdx",
+            "start": "2022-04-21T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "31688",
+                "denom": "ukava"
+              }
+            ]
+          }
+        ],
+        "swap_reward_periods": [
+          {
+            "active": true,
+            "collateral_type": "ukava:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "316880",
+                "denom": "swp"
+              },
+              {
+                "amount": "31688",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "swp:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "616880",
+                "denom": "swp"
+              },
+              {
+                "amount": "31688",
+                "denom": "ukava"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "hard:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "116880",
+                "denom": "swp"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "116880",
+                "denom": "swp"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/4129EB76C01ED14052054BB975DE0C6C5010E12FFD9253C20C58BCD828BEE9A5:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "116880",
+                "denom": "swp"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/C72DE26FFF16DE62BE2784E12229BDF5F4465CE8B10530426D6DB53255FF01B2:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "116880",
+                "denom": "swp"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "116880",
+                "denom": "swp"
+              }
+            ]
+          },
+          {
+            "active": true,
+            "collateral_type": "busd:usdx",
+            "start": "2021-12-08T14:00:00Z",
+            "end": "2024-01-01T00:00:00Z",
+            "rewards_per_second": [
+              {
+                "amount": "156880",
+                "denom": "swp"
+              }
+            ]
+          }
+        ],
+        "claim_multipliers": [
+          {
+            "denom": "hard",
+            "multipliers": [
+              {
+                "name": "MULTIPLIER_NAME_SMALL",
+                "months_lockup": "1",
+                "factor": "0.2"
+              },
+              {
+                "name": "MULTIPLIER_NAME_LARGE",
+                "months_lockup": "12",
+                "factor": "1.0"
+              }
+            ]
+          },
+          {
+            "denom": "swp",
+            "multipliers": [
+              {
+                "name": "MULTIPLIER_NAME_SMALL",
+                "months_lockup": "1",
+                "factor": "0.1"
+              },
+              {
+                "name": "MULTIPLIER_NAME_LARGE",
+                "months_lockup": "12",
+                "factor": "1.0"
+              }
+            ]
+          },
+          {
+            "denom": "ukava",
+            "multipliers": [
+              {
+                "name": "MULTIPLIER_NAME_SMALL",
+                "months_lockup": "1",
+                "factor": "0.2"
+              },
+              {
+                "name": "MULTIPLIER_NAME_LARGE",
+                "months_lockup": "12",
+                "factor": "1.0"
+              }
+            ]
+          }
+        ],
+        "claim_end": "2025-01-01T00:00:00Z"
+      },
+      "delegator_reward_state": {
+        "accumulation_times": [],
+        "multi_reward_indexes": []
+      },
+      "hard_borrow_reward_state": {
+        "accumulation_times": [],
+        "multi_reward_indexes": []
+      },
+      "hard_supply_reward_state": {
+        "accumulation_times": [],
+        "multi_reward_indexes": []
+      },
+      "swap_reward_state": {
+        "accumulation_times": [],
+        "multi_reward_indexes": []
+      },
+      "usdx_reward_state": {
+        "accumulation_times": [],
+        "multi_reward_indexes": []
+      },
+      "delegator_claims": [],
+      "hard_liquidity_provider_claims": [],
+      "usdx_minting_claims": [],
+      "swap_claims": [
+        {
+          "base_claim": {
+            "owner": "kava1ektgdyy0z23qqnd67ns3qvfzgfgjd5xe82lf5c",
+            "reward": []
+          },
+          "reward_indexes": [
+            {
+              "collateral_type": "ukava:usdx",
+              "reward_indexes": []
+            }
+          ]
+        },
+        {
+          "base_claim": {
+            "owner": "kava173w2zz287s36ewnnkf4mjansnthnnsz7rtrxqc",
+            "reward": []
+          },
+          "reward_indexes": [
+            {
+              "collateral_type": "hard:usdx",
+              "reward_indexes": []
+            },
+            {
+              "collateral_type": "swp:usdx",
+              "reward_indexes": []
+            },
+            {
+              "collateral_type": "ukava:usdx",
+              "reward_indexes": []
+            }
+          ]
+        }
+      ]
+    },
+    "issuance": {
+      "params": {
+        "assets": []
+      },
+      "supplies": []
+    },
+    "kavadist": {
+      "params": {
+        "active": false,
+        "periods": []
+      },
+      "previous_block_time": "1970-01-01T00:00:01Z"
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "ukava",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "params": null,
+    "pricefeed": {
+      "params": {
+        "markets": [
+          {
+            "active": true,
+            "base_asset": "bnb",
+            "market_id": "bnb:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "bnb",
+            "market_id": "bnb:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "btc",
+            "market_id": "btc:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "btc",
+            "market_id": "btc:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "xrp",
+            "market_id": "xrp:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "xrp",
+            "market_id": "xrp:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "busd",
+            "market_id": "busd:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "busd",
+            "market_id": "busd:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "kava",
+            "market_id": "kava:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "kava",
+            "market_id": "kava:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "hard",
+            "market_id": "hard:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "hard",
+            "market_id": "hard:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "atom",
+            "market_id": "atom:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "atom",
+            "market_id": "atom:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "osmo",
+            "market_id": "osmo:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "osmo",
+            "market_id": "osmo:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "akt",
+            "market_id": "akt:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "akt",
+            "market_id": "akt:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "luna",
+            "market_id": "luna:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "luna",
+            "market_id": "luna:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "usdx",
+            "market_id": "usdx:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "usdx",
+            "market_id": "usdx:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "usdx",
+            "market_id": "usdx:usd:720",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "swp",
+            "market_id": "swp:usd",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          },
+          {
+            "active": true,
+            "base_asset": "swp",
+            "market_id": "swp:usd:30",
+            "oracles": ["kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h"],
+            "quote_asset": "usd"
+          }
+        ]
+      },
+      "posted_prices": [
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "bnb:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "215.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "bnb:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "217.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "btc:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "29500.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "btc:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "28500.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "akt:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "akt:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "osmo:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "4.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "osmo:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "4.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "luna:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "92.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "luna:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "92.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "atom:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "24.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "atom:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "24.962650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "xrp:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "0.552650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "xrp:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "0.552650000000001782"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "busd:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "busd:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "usdx:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "usdx:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "usdx:usd:720",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "1.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "kava:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "3.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "kava:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "3.000000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "hard:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "0.500000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "hard:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "0.500000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "swp:usd",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "2.150000000000000000"
+        },
+        {
+          "expiry": "2022-07-20T00:00:00Z",
+          "market_id": "swp:usd:30",
+          "oracle_address": "kava1hdn83q3srldcpan4ex2v4npuae8hmnfrps3e6h",
+          "price": "2.150000000000000000"
+        }
+      ]
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "ukava"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "swap": {
+      "params": {
+        "allowed_pools": [
+          {
+            "token_a": "ukava",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "hard",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "ibc/4129EB76C01ED14052054BB975DE0C6C5010E12FFD9253C20C58BCD828BEE9A5",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "ibc/C72DE26FFF16DE62BE2784E12229BDF5F4465CE8B10530426D6DB53255FF01B2",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "swp",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "bnb",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "btcb",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "busd",
+            "token_b": "usdx"
+          },
+          {
+            "token_a": "usdx",
+            "token_b": "xrpb"
+          }
+        ],
+        "swap_fee": "0.001500000000000000"
+      },
+      "pool_records": [
+        {
+          "pool_id": "btcb:usdx",
+          "reserves_a": {
+            "amount": "200000000",
+            "denom": "btcb"
+          },
+          "reserves_b": {
+            "amount": "100000000000",
+            "denom": "usdx"
+          },
+          "total_shares": "4472135954"
+        },
+        {
+          "pool_id": "hard:usdx",
+          "reserves_a": {
+            "amount": "1000000000",
+            "denom": "hard"
+          },
+          "reserves_b": {
+            "amount": "1000000000",
+            "denom": "usdx"
+          },
+          "total_shares": "1000000000"
+        },
+        {
+          "pool_id": "swp:usdx",
+          "reserves_a": {
+            "amount": "5000000000",
+            "denom": "swp"
+          },
+          "reserves_b": {
+            "amount": "1000000000",
+            "denom": "usdx"
+          },
+          "total_shares": "2236067977"
+        },
+        {
+          "pool_id": "ukava:usdx",
+          "reserves_a": {
+            "amount": "5000000000",
+            "denom": "ukava"
+          },
+          "reserves_b": {
+            "amount": "1000000000",
+            "denom": "usdx"
+          },
+          "total_shares": "2236067977"
+        }
+      ],
+      "share_records": [
+        {
+          "depositor": "kava173w2zz287s36ewnnkf4mjansnthnnsz7rtrxqc",
+          "pool_id": "btcb:usdx",
+          "shares_owned": "4472135954"
+        },
+        {
+          "depositor": "kava173w2zz287s36ewnnkf4mjansnthnnsz7rtrxqc",
+          "pool_id": "hard:usdx",
+          "shares_owned": "1000000000"
+        },
+        {
+          "depositor": "kava173w2zz287s36ewnnkf4mjansnthnnsz7rtrxqc",
+          "pool_id": "swp:usdx",
+          "shares_owned": "2236067977"
+        },
+        {
+          "depositor": "kava173w2zz287s36ewnnkf4mjansnthnnsz7rtrxqc",
+          "pool_id": "ukava:usdx",
+          "shares_owned": "2236067977"
+        }
+      ]
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      }
+    },
+    "upgrade": {},
+    "validatorvesting": null,
+    "vesting": {}
+  }
+}
