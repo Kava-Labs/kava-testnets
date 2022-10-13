@@ -1,0 +1,5 @@
+{
+    "binaries": {
+        "linux/amd64": "https://github.com/Kava-Labs/kava/releases/download/v0.19.5-testnet/kava-v0.19.5-testnet-linux-amd64?checksum=sha256:203bc1904057dd166da9e7f559eb2951c5ed74f50bf914d5d8432c03e96397ad"
+    }
+}
