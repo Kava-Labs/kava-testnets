@@ -1,0 +1,6 @@
+{
+  "binaries": {
+    "linux/amd64": "https://github.com/Kava-Labs/kava/releases/download/v0.26.0-alpha.0/kava-v0.26.0-alpha.0-linux-amd64?checksum=sha266:1d2a3424b6b719a43587ad00d9b0bca1d11e6bf4660a5c00f40c7b1e41e76e8a",
+    "linux/arm64": "https://github.com/Kava-Labs/kava/releases/download/v0.26.0-alpha.0/kava-v0.26.0-alpha.0-linux-arm64?checksum=sha266:6b3bae1588475e22e239e316aa1cdddd8b52c3cbd694a1b9e01751b06122fcb4"
+  }
+}
